@@ -1,13 +1,33 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import  withStyles  from '@material-ui/core/styles/withStyles';
+import PropTypes from 'prop-types'
 
-export class Login extends Component {
+
+// MUI Stuff
+import Grid from '@material-ui/core/Grid'
+const styles = {
+    form: {
+        textAlign: 'center'
+    }
+}
+
+export class login extends Component {
     render() {
+        const { classes } = this.props
         return (
-            <div>
-                <h1>Login page</h1>
-            </div>
+            <Grid container className={classes.form}>
+                <Grid item sm/>
+                <Grid item sm>
+                    <p>Yoooo</p>
+                </Grid>
+                <Grid item sm/>
+            </Grid>
         )
     }
 }
 
-export default Login
+login.propTypes ={
+    classes: PropTypes.object.isRequired
+}
+
+export default withStyles(styles)(login)
