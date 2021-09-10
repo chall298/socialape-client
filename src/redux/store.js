@@ -10,13 +10,13 @@ const initialState = {};
 const middleware = [thunk];
 
 const reducers = combineReducers({
-  user: userReducer,
-  data: dataReducer,
-  UI: uiReducer
+    user: userReducer,
+    data: dataReducer,
+    UI: uiReducer
 });
 
 const composeEnhancers =
-  typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+    typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
     : compose;
 
