@@ -5,13 +5,14 @@ import theme from '../util/theme'
 import { connect } from 'react-redux'
 import { editUserDetails } from '../redux/actions/userActions'
 import EditIcon from '@material-ui/icons/Edit'
-import Tooltip from '@material-ui/core/Tooltip'
-import IconButton from '@material-ui/core/IconButton'
+import MyButton from '../util/MyButton';
+import Tooltip from '@material-ui/core/Tooltip';
+import IconButton from '@material-ui/core/IconButton';
 
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
+import DialogActions from '@material-ui/core/DialogActions'; 
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
@@ -67,11 +68,14 @@ class EditDetails extends Component {
         const { classes } = this.props
         return (
             <Fragment>
-                <Tooltip title="Edit details" placement="top">
+                {/* <Tooltip title="Edit details" placement="top">
                     <IconButton onClick={this.handleOpen} className={classes.button}>
                         <EditIcon color="primary"/>
                     </IconButton>
-                </Tooltip>
+                </Tooltip> */}
+                <MyButton tip="Edit Details" onClick={this.handleOpen} btnClassName={classes.button}>
+                    <EditIcon color="primary"/>
+                </MyButton>
                 <Dialog
                     open={this.state.open}
                     onClose={this.handleClose}
