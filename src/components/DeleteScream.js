@@ -35,6 +35,7 @@ class DeleteScream extends Component {
       deleteScream = () => {
         this.props.deleteScream(this.props.screamId);
         this.setState({ open: false });
+        // window.location.href = "/"
       };
     render() {
         const { classes } = this.props;
