@@ -4,7 +4,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import MyButton from '../../util/MyButton';
 import LikeButton from './LikeButton';
 import Comments from './Comments';
-// import CommentForm from './CommentForm';
+import CommentForm from './CommentForm';
 import dayjs from 'dayjs';
 import { Link } from 'react-router-dom';
 // MUI Stuff
@@ -52,12 +52,15 @@ class ScreamDialog extends Component {
     state = {
         open: false
     }
+    
+    
     handleOpen = () => {
         this.setState({ open: true })
         this.props.getScream(this.props.screamId)
     }
     handleClose = () => {
         this.setState({ open: false })
+        this.props.clearErrors();
     }
     render(){
         const { classes, scream: { screamId, body, createdAt, likeCount, commentCount, userImage, userHandle, comments }, UI: { loading } } = this.props
@@ -95,6 +98,7 @@ class ScreamDialog extends Component {
                     <span>{commentCount} comments</span>
                 </Grid>
                 <hr className={classes.visibleSeparator}/>
+                <CommentForm screamId={screamId}/>
                 <Comments comments={comments}/>
             </Grid>
         )
