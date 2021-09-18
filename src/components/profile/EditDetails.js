@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
 import  withStyles  from '@material-ui/core/styles/withStyles'
-import theme from '../util/theme'
+// import theme from '../util/theme'
 import { connect } from 'react-redux'
-import { editUserDetails } from '../redux/actions/userActions'
+import { editUserDetails } from '../../redux/actions/userActions'
 import EditIcon from '@material-ui/icons/Edit'
-import MyButton from '../util/MyButton';
+import MyButton from '../../util/MyButton';
 import Tooltip from '@material-ui/core/Tooltip';
 import IconButton from '@material-ui/core/IconButton';
 
