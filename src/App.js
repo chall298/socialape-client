@@ -24,6 +24,8 @@ import user from './pages/user'
 
 const theme = createTheme(themeFile)
 
+axios.defaults.baseURL = "https://us-central1-socialape-d2644.cloudfunctions.net/api"
+
 
 const token = localStorage.FBIdToken
 if(token){
