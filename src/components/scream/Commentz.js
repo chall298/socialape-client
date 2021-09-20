@@ -21,7 +21,7 @@ const styles = (theme) => ({
     }
   });
 
-class Comments extends Component {
+class Commentz extends Component {
     render(){
         const { comments, classes } = this.props
         return (
@@ -56,7 +56,7 @@ class Comments extends Component {
                                     </Grid>
                                 </Grid>
                             </Grid>
-                            {index !== comments.length - 1 && (
+                            {index !== comment.length - 1 && (
                 <hr className={classes.visibleSeparator} />
               )}
                         </Fragment>
@@ -67,8 +67,8 @@ class Comments extends Component {
     }
 }
 
-Comments.propTypes = {
+Commentz.propTypes = {
     comments: PropTypes.array.isRequired
   };
   
-  export default withStyles(styles)(Comments);
+  export default withStyles(styles)(Commentz);
