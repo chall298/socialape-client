@@ -1,3 +1,14 @@
+After clicking the gitpod link, type npm install in the terminal
+
+then go to node_modules/react-scripts/config/webpackDevServer.config.js
+
+within the disableHostCheck key, replace this line of code (!proxy || process.env.DANGEROUSLY_DISABLE_HOST_CHECK === 'true') with (true) (not including parenthesis)
+
+that should allow it to function wihtin the gitpod work space
+
+or you can see it live here ---------->  https://socialape-p7z2a81n1-chall298.vercel.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
