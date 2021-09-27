@@ -1,3 +1,5 @@
+This social media app was built using Javascript, reactjs, firebase, material ui, and expressjs
+
 After clicking the gitpod link, type npm install in the terminal
 
 then go to node_modules/react-scripts/config/webpackDevServer.config.js
