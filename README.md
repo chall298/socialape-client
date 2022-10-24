@@ -8,7 +8,7 @@ within the disableHostCheck key, replace this line of code (!proxy || process.en
 
 that should allow it to function wihtin the gitpod work space
 
-or you can see it live here ---------->  https://socialape-p7z2a81n1-chall298.vercel.app/
+or you can see it live here ---------->  https://socialape-client-tu4j.vercel.app/
 
 
 # Getting Started with Create React App
